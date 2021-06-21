@@ -20,7 +20,7 @@ var backBtn = document.querySelector("#backBtn");
 var clearBtn = document.querySelector("#clearBtn");
 var start = document.querySelector(".start");
 
-var timeLeft = questionBank.length * 15;
+var timeLeft = questionBank.length * 10;
 var q = 0;
 var s = 0;
 var score = 0;
@@ -168,7 +168,7 @@ submitBtn.addEventListener("click", function (event) {
     player: playerInitials,
     score: score,
   };
-  
+
   scoreList.push(newScore);
   saveScore();
   leaderBoard();
